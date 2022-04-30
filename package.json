@@ -1,0 +1,22 @@
+{
+  "name": "fastify-todo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmbanugo/fastify-todo-example.git"
+  },
+  "author": "Peter Mbanugo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmbanugo/fastify-todo-example/issues"
+  },
+  "homepage": "https://github.com/pmbanugo/fastify-todo-example#readme",
+  "dependencies": {
+    "fastify": "^3.29.0"
+  }
+}
