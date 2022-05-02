@@ -4,7 +4,13 @@ const fastify = require("fastify")({
 const todos = require("./todo.json");
 
 fastify.get("/", function (request, reply) {
-  reply.send({ hello: "world" });
+  const data = Object.entries(todos).map((x) => x[1]);
+  reply.send(data);
+});
+
+fastify.get("/:id", function (request, reply) {
+  const data = todos[request.params.id];
+  reply.send(data);
 });
 
 fastify.listen(3000, "0.0.0.0", function (err, address) {
